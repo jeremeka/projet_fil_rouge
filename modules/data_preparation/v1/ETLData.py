@@ -122,7 +122,7 @@ class ETLData:
             args = ''
             for i in range(len(column_names)-1):
                 args = args + generate_arg_str(column_names[i]) + ','
-            args = args + generate_arg_str(column_names[i])
+            args = args + generate_arg_str(column_names[len(column_names)-1])
             return args
         
         def generate_fn_str(function_name, column_names):
